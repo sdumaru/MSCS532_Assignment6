@@ -27,7 +27,7 @@ def median_of_medians(array, k):
         return pivot_element
     else:
         return median_of_medians(high, k - len(low) - pivot_count)
-    
+
 def print_execution_times(array_name, index):
     """ Function to print execution times """
     timer_stmt = '''median_of_medians({0}, {1})'''
